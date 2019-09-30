@@ -9,13 +9,15 @@
  *
  *****************************************************************************/
 /**
- * @file <Add File Name> 
- * @brief <Add Brief Description Here >
+  * @file <stats.c>
+ * @brief < first assignment main function and the other functions ,that doing some math work >
  *
- * <Add Extended Description Here>
+ * <main function and other functions to print a array and find the max,min,mean and the median for an array
+
+ >
  *
- * @author <Add FirsName LastName>
- * @date <Add date >
+ * @author <Zakria Hussine>
+ * @date <30.09.2019>
  *
  */
 #ifndef __STATS_H__
