@@ -48,6 +48,7 @@ void main() {
   /* Statistics and Printing Functions Go Here */
 
     print_statistics(test,SIZE);
+
     print_array(test,SIZE);
     printf("\n");
 
@@ -118,8 +119,8 @@ print_array(sorted,count);
 
 }
 unsigned char find_mean(unsigned char * ptr, int count){
-int avg , i ;
-
+int  i ;
+double avg;
 if(ptr==0){
     return 0;
 }
@@ -145,10 +146,22 @@ if(ptr==0){
 if (count <= 0 ){
     return 0;
 }
-
+int i,j,temp;
+for(i=1;i<count;i++)
+{
+     for(j=0;j<count-i;j++)
+     {
+         if(ptr[j]<ptr[j+1])
+         {
+             temp=ptr[j];
+             ptr[j]=ptr[j+1];
+             ptr[j+1]=temp;
+         }
+     }
+}
 
  if((count%2)==0){
-    sort_array(ptr,count);
+
     return (ptr[(count-1)/2] + ptr[count/2])/2;
  }else
  {
@@ -204,6 +217,7 @@ return min;
 };
 
 /* Add other Implementation File Code Here */
+
 
 
 
